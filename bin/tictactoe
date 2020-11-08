@@ -4,23 +4,24 @@ require_relative '../config/environment'
 require 'pry'
 puts "Welcome to Tic Tac Toe"
 puts " are you looking for 0,1, or 2 players game?"
-
-if gets.strip.to_i == 0
+input =gets.strip.to_i
+if input == 0
   Game.new(Players::Computer.new("X"),Players::Computer.new("O"),Board.new).play
 
-elsif gets.strip.to_i == 1
+elsif input == 1
 
   puts "please enter your token"
-  if gets.strip == "X"
+  token=gets.strip
+  if token == "X"
      Game.new(Players::Human.new("X"),Players::Computer.new("O"),Board.new).play
 
-  elsif gets.strip == "O"
+  elsif token == "O"
     Game.new(Players::Computer.new("X"),Players::Human.new("O"),Board.new).play
 
   else
     puts "invalid"
   end
-elsif gets.strip.to_i == 2
+elsif input == 2
   puts "X goes first"
   Game.new(Players::Human.new("X"),Players::Human.new("O"),Board.new).play
 
