@@ -9,8 +9,8 @@ if gets.strip.to_i == 0
 elsif gets.strip.to_i == 1
   puts "please enter your token"
   if gets.strip == "X"
-    Game.new(Players::Human.new("X"),Players::Computer.new("O"),Board.new)
-    Game.play
+    Game.new(Players::Human.new("X"),Players::Computer.new("O"),Board.new).play
+  
   elsif gets.strip == "O"
     Game.new(Players::Computer.new("X"),Players::Human.new("O"),Board.new)
     Game.play
