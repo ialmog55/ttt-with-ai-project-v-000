@@ -1,4 +1,5 @@
 module Players
+  require 'pry'
   class Computer < Player
     attr_accessor :board
     def move(board)
@@ -87,8 +88,9 @@ module Players
       else i=1
         while i<< 9
           if board.valid_move?("#{i}")
+            binding.pry
             return "#{i}"
-
+ 
           else
             i=i+1
           end
