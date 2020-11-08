@@ -24,6 +24,7 @@ module Players
           "7"
         end
       elsif board.cells[0] == board.cells[6]
+        binding.pry
         if board.valid_move?("4")
           "4"
         end
