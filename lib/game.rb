@@ -56,6 +56,7 @@ class Game
      end
      def turn
        input=self.current_player.move(@board)
+       binding.pry
        until @board.valid_move?(input)
          input=self.current_player.move(@board)
        end
