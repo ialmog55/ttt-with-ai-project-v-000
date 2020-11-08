@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 
 require_relative '../config/environment'
-require "pry"
+
 puts "Welcome to Tic Tac Toe"
 puts " are you looking for 0,1, or 2 players game?"
 if gets.strip.to_i == 0
