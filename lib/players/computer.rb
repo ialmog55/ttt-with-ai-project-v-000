@@ -19,7 +19,7 @@ module Players
           "1"
         end
       elsif board.cells[0] == board.cells[3]
-        
+
         if board.valid_move?("7")
           "7"
         end
