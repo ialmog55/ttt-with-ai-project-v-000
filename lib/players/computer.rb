@@ -90,7 +90,7 @@ module Players
           if board.valid_move?("#{i}")
             binding.pry
             return "#{i}"
- 
+
           else
             i=i+1
           end
