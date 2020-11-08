@@ -87,8 +87,8 @@ module Players
       else i=1
         while i<< 9
           if board.valid_move?("#{i}")
-            "#{i}"
-            return
+            return "#{i}"
+            
           else
             i=i+1
           end
