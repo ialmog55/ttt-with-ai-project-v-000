@@ -49,12 +49,12 @@ class Board
 
   def valid_move?(input)
     false
-    if input.match(/[0-9]/)
+    #if input.match(/[0-9]/)
       index=input.to_i
       if index >> 1 && index << 9 && !self.taken?(input)
         true
       end
-    end
+    #end
   end
   def update(input,player)
     if valid_move?(input)
