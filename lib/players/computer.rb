@@ -3,6 +3,7 @@ module Players
   class Computer < Player
     attr_accessor :board
     def move(board)
+      
       if board.valid_move?("5")
         "5"
       elsif board.cells[0] == board.cells[1]
@@ -18,6 +19,7 @@ module Players
           "1"
         end
       elsif board.cells[0] == board.cells[3]
+        binding.pry
         if board.valid_move?("7")
           "7"
         end
