@@ -4,6 +4,7 @@ require_relative '../config/environment'
 require 'pry'
 puts "Welcome to Tic Tac Toe"
 puts " are you looking for 0,1, or 2 players game?"
+binding.pry
 if gets.strip.to_i == 0
   Game.new(Players::Computer.new("X"),Players::Computer.new("O"),Board.new).play
 
